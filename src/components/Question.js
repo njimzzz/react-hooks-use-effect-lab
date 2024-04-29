@@ -14,7 +14,7 @@ function Question({ question, onAnswered }) {
     }, 1000)
 
     return () => clearTimeout(timer)
-  }}, [timeRemaining])
+  }}, [timeRemaining, onAnswered])
 
 
   function handleAnswer(isCorrect) {
